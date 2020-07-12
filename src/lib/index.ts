@@ -1,3 +1,5 @@
-const twoPlusTwo = 4;
+const wait = async (timeInMs: number): Promise<void> => {
+    return new Promise((resolve) => setTimeout(() => resolve(), timeInMs));
+};
 
-export default twoPlusTwo;
+export default wait;
