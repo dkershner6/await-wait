@@ -1,6 +1,6 @@
 {
   "name": "await-wait",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Easily asynchronously wait for a specified time.",
   "main": "dist/index.js",
   "source": "src/index.ts",
