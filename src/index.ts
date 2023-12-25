@@ -1,5 +1,3 @@
-export class Hello {
-  public sayHello() {
-    return 'hello, world!';
-  }
-}
+export const wait = async (timeInMs: number): Promise<void> => {
+    return new Promise((resolve) => setTimeout(() => resolve(), timeInMs));
+};

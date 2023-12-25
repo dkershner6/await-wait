@@ -1,6 +1,6 @@
-import wait from '.';
+import { wait } from ".";
 
-describe('wait', () => {
+describe("wait", () => {
     beforeAll(() => {
         jest.useFakeTimers();
     });
@@ -9,7 +9,7 @@ describe('wait', () => {
         jest.useRealTimers();
     });
 
-    it('Should wait the number of milliseconds before allowing further async calls', async () => {
+    it("Should wait the number of milliseconds before allowing further async calls", async () => {
         const testFunc = jest.fn();
 
         const asyncTest = async () => {

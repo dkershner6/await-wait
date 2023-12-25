@@ -2,13 +2,14 @@
 /.projen/
 /test-reports/
 junit.xml
+/jest.config.json
 /coverage/
 permissions-backup.acl
 /dist/changelog.md
 /dist/version.txt
 /.mergify.yml
 /test/
-/tsconfig.dev.json
+/tsconfig.publish.json
 /src/
 !/lib/
 !/lib/**/*.js
