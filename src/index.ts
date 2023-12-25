@@ -1,4 +1,5 @@
-import wait from './lib';
-
-export { wait };
-export default wait;
+export class Hello {
+  public sayHello() {
+    return 'hello, world!';
+  }
+}
