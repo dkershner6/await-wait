@@ -2,7 +2,8 @@ import {
     BASE_PROJECT_OPTIONS_NODE_20,
     enactBaseProjectConfig,
 } from "dkershner6-projen";
-import { typescript } from "projen";
+import { TextFile, typescript } from "projen";
+import { Nvmrc } from "projen-nvm";
 
 const project = new typescript.TypeScriptProject({
     majorVersion: 1,
@@ -26,5 +27,9 @@ const project = new typescript.TypeScriptProject({
 });
 
 enactBaseProjectConfig(project);
+
+new Nvmrc(project);
+
+new TextFile(project, ".github/CODEOWNERS", { lines: ["* @dkershner6"] });
 
 project.synth();

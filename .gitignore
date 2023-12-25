@@ -52,3 +52,5 @@ junit.xml
 /lib
 /dist/
 !/.eslintrc.json
+!/.nvmrc
+!/.github/CODEOWNERS

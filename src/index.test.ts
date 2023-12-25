@@ -12,7 +12,7 @@ describe("wait", () => {
     it("Should wait the number of milliseconds before allowing further async calls", async () => {
         const testFunc = jest.fn();
 
-        const asyncTest = async () => {
+        const asyncTest = async (): Promise<void> => {
             await wait(15000);
             testFunc();
         };
