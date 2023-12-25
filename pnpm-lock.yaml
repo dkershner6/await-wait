@@ -56,6 +56,9 @@ devDependencies:
   projen:
     specifier: ^0.78.2
     version: 0.78.2(constructs@10.3.0)
+  projen-nvm:
+    specifier: ^0.0.9
+    version: 0.0.9(constructs@10.3.0)(projen@0.78.2)
   standard-version:
     specifier: ^9
     version: 9.5.0
@@ -4201,6 +4204,17 @@ packages:
 
   /process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
+    dev: true
+
+  /projen-nvm@0.0.9(constructs@10.3.0)(projen@0.78.2):
+    resolution: {integrity: sha512-wjDT0qwhIHSSrI6Jo/NdU5fu3MxJo950lEoHb+X0FzMGR9GYYiIuCKqw/CpkohanIJPc4FvBcZnCwgKQ3tj4Dw==}
+    engines: {node: '>= 18.12.0 <= 20.10.0'}
+    peerDependencies:
+      constructs: ^10.3.0
+      projen: ^0.78.2
+    dependencies:
+      constructs: 10.3.0
+      projen: 0.78.2(constructs@10.3.0)
     dev: true
 
   /projen@0.78.2(constructs@10.3.0):
