@@ -23,12 +23,20 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "stripInternal": true,
-    "target": "es2022"
+    "target": "es2022",
+    "types": [
+      "jest",
+      "node"
+    ]
   },
   "include": [
     ".projenrc.js",
     "src/**/*.ts",
     "test/**/*.ts",
+    "src/**/__test__/**/*",
+    "src/**/__mocks__/**/*",
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts",
     ".projenrc.ts",
     "projenrc/**/*.ts"
   ],
