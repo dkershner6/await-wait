@@ -25,12 +25,19 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "stripInternal": true,
-    "target": "es2022"
+    "target": "es2022",
+    "types": [
+      "jest",
+      "node"
+    ]
   },
   "include": [
     "src/**/*.ts"
   ],
   "exclude": [
-    "src/**/*.test.ts"
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts",
+    "**/__tests__/**/*",
+    "**/__mocks__/**/*"
   ]
 }
