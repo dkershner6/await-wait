@@ -20,9 +20,9 @@ devDependencies:
   constructs:
     specifier: ^10.0.0
     version: 10.3.0
-  dkershner6-projen:
-    specifier: ^0.0.26
-    version: 0.0.26(clone-deep@4.0.1)(constructs@10.3.0)(projen@0.78.5)
+  dkershner6-projen-typescript:
+    specifier: ^0.0.3
+    version: 0.0.3(clone-deep@4.0.1)(constructs@10.3.0)(projen@0.78.5)
   eslint:
     specifier: ^8
     version: 8.56.0
@@ -1975,8 +1975,8 @@ packages:
       path-type: 4.0.0
     dev: true
 
-  /dkershner6-projen@0.0.26(clone-deep@4.0.1)(constructs@10.3.0)(projen@0.78.5):
-    resolution: {integrity: sha512-BXejG+/kNfeC+yGoEOedbdLgdBd5o0VgtGmzny/WqqBOP87xMWrbMgdiXXhA+Qq9Jva0GiOjLrY58JFf+VQqlg==}
+  /dkershner6-projen-typescript@0.0.3(clone-deep@4.0.1)(constructs@10.3.0)(projen@0.78.5):
+    resolution: {integrity: sha512-NjMRDH5zwf6f/Bn+oJ6WmyDp0aHYViO5kv9aWNUppx7uzoMRyDREhTGRXhi3RhiUCiThQlJctrKvSi8NY7QaSA==}
     engines: {node: '>= 18.12.0 <= 20.10.0'}
     peerDependencies:
       clone-deep: ^4.0.1
