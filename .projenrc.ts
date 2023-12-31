@@ -1,4 +1,4 @@
-import { Node20TypeScriptProject } from "dkershner6-projen";
+import { Node20TypeScriptProject } from "dkershner6-projen-typescript";
 import { TextFile } from "projen";
 import { Nvmrc } from "projen-nvm";
 
@@ -19,13 +19,7 @@ const project = new Node20TypeScriptProject({
     repository: `git+https://github.com/dkershner6/${PACKAGE_NAME}.git`,
     projenrcTs: true,
 
-    // deps: [],                /* Runtime dependencies of this module. */
-    // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-    devDeps: [
-        "dkershner6-projen",
-        "projen-nvm",
-    ] /* Build dependencies for this module. */,
-    // packageName: undefined,  /* The "name" in package.json. */
+    devDeps: ["dkershner6-projen-typescript", "projen-nvm"],
 
     release: true,
     releaseToNpm: true,
